@@ -1,0 +1,42 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <!--links -->
+    <link rel="stylesheet" href="../css/Principal.css">
+
+
+    <!--code of video-->
+
+    <video  autoplay="autoplay" loop="loop"  id="video_background" preload="auto" volume="50"class="video">
+      <source src="../resource/bioappPrincipal.mp4" type="video/mp4">
+    </video>
+
+
+  
+    <div class="row">
+      <div class="col-50">
+        <h1>BioApp</h1>
+        <p>"La mente humana evolucionó para creer en los dioses. No evolucionó para creer en la biología. (Edward O. Wilson)"</p>
+      </div>
+      <di class="col-50">
+        <img src="../img/logo.png" alt="logo BioApp" class="logo">
+      </di>
+    </div>
+
+
+
+    <!--ilustration of biology-->
+
+    <div class="row">
+      <div class="col-100" ng-controller="DashCtrl">
+        <ul ng-repeat="x in juegos">
+          <li><h2>{{x.nombre}}</h2></li>
+          <li><img src="{{x.img}} " alt="ilustracion" width="100%" height="250"></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  </ion-content>
+</ion-view>
