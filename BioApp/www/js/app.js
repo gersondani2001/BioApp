@@ -54,6 +54,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.info',{
+    url:'/info',
+    views: {
+      'tab-info':{
+        templateUrl:'templates/info-local.html',
+        controller: 'infoCtrl'
+      }
+    }
+  })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -80,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/tab-account.html',
         controller: 'AccountCtrl'
       }
-    }
+    } 
   });
 
   // if none of the above states are matched, use this as the fallback
